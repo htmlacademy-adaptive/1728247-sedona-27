@@ -1,6 +1,7 @@
 .video__text-wrapper {
-  padding-top: 18.5px;
+  padding-top: 17px;
   padding-bottom: 38px;
+  padding-left: 1px;
 }
 
 .video__title {
@@ -16,6 +17,34 @@
 }
 
 .video__shot-wrapper {
-  padding: 0 16px 0 20px;
-  //margin-bottom: -11px;
+  padding: 0 18px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1px;
+}
+
+.video__button {
+  position: absolute;
+  border: none;
+  background-image: url("../../../../img/video-button.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 48px;
+  height: 54px;
+  top: 35%;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

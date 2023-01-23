@@ -35,10 +35,35 @@
   min-height: 55px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(1, 1, 1, 0.2);
   border-bottom: 1px solid #668bab;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .main-nav__link {
   color: #ffffff;
   padding-top: 17px;
   padding-bottom: 12px;
+
+  &--current {
+    color: #766357;
+  }
+
+  &:focus {
+    outline: none;
+    color: rgba(118, 99, 87, 0.5);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

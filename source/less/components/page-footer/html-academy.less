@@ -1,11 +1,33 @@
 .html-academy {
-  display: flex;
-  justify-content: space-between;
   padding-left: 14px;
   padding-right: 14px;
 }
 
-.html-academy__title {
-  padding-top: 8px;
-  margin-right: 12px;
+.html-academy__link {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  position: relative;
+
+  &:focus {
+    color: #81b3d2;
+    outline: none;
+    fill: #81b3d2;
+  }
+
+  &:hover {
+    color: #81b3d2;
+    fill: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    fill: #b3b3b3;
+  }
+}
+
+.html-academy__logo {
+  position: absolute;
+  top: -7px;
+  left: 101px;
 }
