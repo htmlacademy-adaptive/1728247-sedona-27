@@ -1,5 +1,9 @@
 .main-nav__wrapper {
   padding-top: 96px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -14,7 +18,7 @@
   background-color: #ffffff;
   cursor: pointer;
   border: none;
-  display: none;
+  display: none; //убрать эту строку когда сделаю js
 
   &:hover {
     opacity: 0.9;
@@ -23,11 +27,20 @@
   &:disabled {
     opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__menu {
   .font-family-bold;
-  //display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .main-nav__item {
@@ -47,7 +60,32 @@
   &:disabled {
     background-color: #e5e5e5;
   }
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    box-shadow: none;
+    border: none;
+    color: #000000;
+    width: 20%;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+    }
+
+    &:disabled {
+      background-color: #ffffff;
+      color: #e5e5e5;
+    }
+  }
 }
+
+/*.main-nav__item:nth-of-type(3) {
+  display: none;
+}*/
 
 .main-nav__link {
   color: #ffffff;
@@ -65,5 +103,23 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+
+    &--current {
+      color: #766357;
+    }
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
