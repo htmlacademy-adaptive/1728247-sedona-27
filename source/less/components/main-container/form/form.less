@@ -1,5 +1,9 @@
 .form__block {
   .border-page;
+
+  &--review {
+    border: none;
+  }
 }
 
 .form__title {
@@ -8,17 +12,21 @@
   line-height: 26px;
   margin: 0;
   padding: 0;
-  padding-top: 24px;
+  padding-top: 25px;
   margin-bottom: 20px;
+
+  &--pixelperfect {
+    margin-bottom: 19px;
+  }
 }
 
 .form__submit {
-  padding: 55.5px 18px 24px;
+  padding: 56px 18px 25px;
 }
 
 .form__button {
   min-height: 58px;
-  padding-top: 16.5px;
+  padding-top: 17px;
   padding-bottom: 15.5px;
   padding-left: 49px;
   padding-right: 49px;
@@ -29,6 +37,24 @@
   line-height: 26px;
   border: none;
   text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+    background-color: #669ec0;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__required-note {
@@ -38,5 +64,5 @@
   font-size: 12px;
   line-height: 21px;
   padding-right: 2px;
-  padding-top: 3px;
+  padding-top: 2px;
 }

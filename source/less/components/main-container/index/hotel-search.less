@@ -1,15 +1,15 @@
 .hotel-search {
-  padding: 41px 18px 49px;
+  padding: 43px 18px 49px;
 }
 
 .hotel-search__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .hotel-search__description {
   margin: 0;
-  margin-bottom: 31.5px;
+  margin-bottom: 33px;
 }
 
 .hotel-search__button {
@@ -23,4 +23,22 @@
   .font-family-bold;
   font-size: 21px;
   line-height: 26px;
+
+  &:focus {
+    outline: none;
+    background-color: #669ec0;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

@@ -8,6 +8,16 @@
   font-size: 18px;
   line-height: 26px;
   padding-left: 24px;
+  cursor: pointer;
+
+  &:focus {
+    color: #d2d2d2;
+    outline: none;
+  }
+
+  &:hover {
+    color: #d2d2d2;
+  }
 }
 
 .radio__input {
@@ -19,4 +29,50 @@
   border-radius: 50%;
   left: -3px;
   top: -14px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+
+  &:disabled {
+    background-color: transparent;
+  }
+}
+
+.radio__input:checked:focus + .radio__label {
+  color: #d2d2d2;
+  outline: none;
+}
+
+.radio__input:checked + .radio__label::before {
+  position: absolute;
+  background-color: #333333;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 17px;
+  top: 4px;
+  content: "";
+}
+
+.radio__input:checked:active + .radio__label::before {
+  position: absolute;
+  background-color: #333333;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 17px;
+  top: 4px;
+  content: "";
+  opacity: 0.3;
 }

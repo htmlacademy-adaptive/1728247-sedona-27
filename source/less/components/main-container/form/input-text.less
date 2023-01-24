@@ -1,7 +1,7 @@
 .input-text__field {
   border: none;
   background-color: #f2f2f2;
-  padding-left: 18px;
+  padding-left: 17px;
   padding-top: 17px;
   padding-bottom: 16px;
   .block;
@@ -10,8 +10,27 @@
   font-size: 18px;
   line-height: 26px;
 
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &--user-review {
     min-height: 150px;
     resize: none;
+    margin-left: 1px;
+  }
+
+  &:focus {
+    background-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
   }
 }
