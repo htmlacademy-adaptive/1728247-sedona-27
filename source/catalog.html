@@ -11,6 +11,8 @@
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div class="body-container">
@@ -46,7 +48,11 @@
       <main class="main-container">
         <div class="hero">
           <h1 class="visually-hidden">Насладитесь красотами Седоны, фото и видео вам помогут.</h1>
-          <img class="hero__title-img" src="img/SEDONA_title.svg" width="229" height="39" alt="Красоты Седоны.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/SEDONA_title-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/SEDONA_title-tablet.svg">
+            <img class="hero__title-img" src="img/SEDONA_title.svg" width="229" height="39" alt="Красоты Седоны.">
+          </picture>
         </div>
 
         <section class="catalog">
@@ -141,11 +147,13 @@
         <section class="video">
           <div class="video__text-wrapper">
             <h2 class="video__title">Все еще сомневаетесь?</h2>
-            <p class="video__description">Смотрите видеопрезентацию и<br>скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <p class="video__description">Смотрите видеопрезентацию&nbspи скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__shot-wrapper">
             <picture>
-              <img class="video__shot" src="img/video_shot.jpg" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
+              <source media=" (min-width: 1200px) " srcset="img/video_shot-desktop.jpg 1x, img/video_shot-desktop@2x.jpg 2x" width="800" height="500">
+              <source media=" (min-width: 768px) " srcset="img/video_shot-tablet.jpg 1x, img/video_shot-tablet@2x.jpg 2x" width="648" height="500">
+              <img class="video__shot" src="img/video_shot.jpg" srcset="img/video_shot-mobile@2x.jpg 2x" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
             </picture>
             <button class="video__button" type="button"></button>
           </div>

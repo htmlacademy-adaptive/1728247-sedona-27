@@ -11,6 +11,8 @@
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div class="body-container">
@@ -47,7 +49,11 @@
 
         <section class="main-banner">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону.</h1>
-          <img class="main-banner__text" src="img/welcome-to-sedona.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!">
+          <picture>
+            <source media=" (min-width: 1200px) " srcset="img/welcome-to-sedona-desktop.svg">
+            <source media=" (min-width: 768px) " srcset="img/welcome-to-sedona-tablet.svg">
+            <img class="main-banner__text" src="img/welcome-to-sedona.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!">
+          </picture>
         </section>
 
         <section class="main-adv">

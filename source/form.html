@@ -11,6 +11,8 @@
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div class="body-container">
@@ -46,8 +48,11 @@
 
       <main class="main-container">
         <div class="hero">
-          <h1 class="visually-hidden">Форма для вашего отзыва о посещении Седоны</h1>
-          <img class="hero__title-img" src="img/SEDONA_title.svg" width="229" height="39" alt="Красоты Седоны.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/SEDONA_title-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/SEDONA_title-tablet.svg">
+            <img class="hero__title-img" src="img/SEDONA_title.svg" width="229" height="39" alt="Красоты Седоны.">
+          </picture>
         </div>
 
         <section class="feedback">
