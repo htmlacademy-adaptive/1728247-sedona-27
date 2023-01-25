@@ -38,7 +38,7 @@
                 <a class="main-nav__link" href="form.html">Форма отзыва</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+                <a class="main-nav__link main-nav__link--pixelperfect" href="https://htmlacademy.ru">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -66,7 +66,11 @@
               <div class="card__photo-wrapper">
                 <a class="card__photo-link" href="#">
                   <picture>
-                    <img class="card__photo" src="img/photo_mobile-sky-vasts.jpg" width="280" height="280" alt="Живописный вид на горы и дорогу на закате.">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-sky-vasts.webp 1x, img/photo_desktop-sky-vasts@2x.webp 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-sky-vasts.webp 1x, img/photo_tablet-sky-vasts@2x.webp 2x">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-sky-vasts.jpg 1x, img/photo_desktop-sky-vasts@2x.jpg 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-sky-vasts.jpg 1x, img/photo_tablet-sky-vasts@2x.jpg 2x">
+                    <img class="card__photo" src="img/photo_mobile-sky-vasts.jpg" srcset="img/photo_mobile-sky-vasts@2x.jpg 2x" width="280" height="280" alt="Живописный вид на горы и дорогу на закате.">
                   </picture>
                 </a>
               </div>
@@ -86,7 +90,11 @@
               <div class="card__photo-wrapper">
                 <a class="card__photo-link" href="#">
                   <picture>
-                    <img class="card__photo" src="img/photo_mobile-flora.jpg" width="280" height="280" alt="Цветущие местные кактусы на фоне скал.">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-flora.webp 1x, img/photo_desktop-flora@2x.webp 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-flora.webp 1x, img/photo_tablet-flora@2x.webp 2x">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-flora.jpg 1x, img/photo_desktop-flora@2x.jpg 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-flora.jpg 1x, img/photo_tablet-flora@2x.jpg 2x">
+                    <img class="card__photo" src="img/photo_mobile-flora.jpg" srcset="img/photo_mobile-flora@2x.jpg 2x" width="280" height="280" alt="Цветущие местные кактусы на фоне скал.">
                   </picture>
                 </a>
               </div>
@@ -106,7 +114,11 @@
               <div class="card__photo-wrapper">
                 <a class="card__photo-link" href="#">
                   <picture>
-                    <img class="card__photo" src="img/photo_mobile-road.jpg" width="280" height="280" alt="Вид горного серпантина дороги среди лесов.">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-road.webp 1x, img/photo_desktop-road@2x.webp 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-road.webp 1x, img/photo_tablet-road@2x.webp 2x">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-road.jpg 1x, img/photo_desktop-road@2x.jpg 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-road.jpg 1x, img/photo_tablet-road@2x.jpg 2x">
+                    <img class="card__photo" src="img/photo_mobile-road.jpg" srcset="img/photo_mobile-road@2x.jpg 2x" width="280" height="280" alt="Вид горного серпантина дороги среди лесов.">
                   </picture>
                 </a>
               </div>
@@ -126,7 +138,11 @@
               <div class="card__photo-wrapper">
                 <a class="card__photo-link" href="#">
                   <picture>
-                    <img class="card__photo" src="img/photo_mobile-bridge-catalog.jpg" width="280" height="280" alt="Вид на скалу Мост Дьявола.">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-bridge-catalog.webp 1x, img/photo_desktop-bridge-catalog@2x.webp 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-bridge-catalog.webp 1x, img/photo_tablet-bridge-catalog@2x.webp 2x">
+                    <source media=" (min-width: 1200px) " srcset="img/photo_desktop-bridge-catalog.jpg 1x, img/photo_desktop-bridge-catalog@2x.jpg 2x">
+                    <source media=" (min-width: 768px) " srcset="img/photo_tablet-bridge-catalog.jpg 1x, img/photo_tablet-bridge-catalog@2x.jpg 2x">
+                    <img class="card__photo" src="img/photo_mobile-bridge-catalog.jpg" srcset="img/photo_mobile-bridge-catalog@2x.jpg 2x" width="280" height="280" alt="Вид на скалу Мост Дьявола.">
                   </picture>
                 </a>
               </div>
@@ -151,6 +167,8 @@
           </div>
           <div class="video__shot-wrapper">
             <picture>
+              <source media=" (min-width: 1200px) " srcset="img/video_shot-desktop.webp 1x, img/video_shot-desktop@2x.webp 2x">
+              <source media=" (min-width: 768px) " srcset="img/video_shot-tablet.webp 1x, img/video_shot-tablet@2x.webp 2x">
               <source media=" (min-width: 1200px) " srcset="img/video_shot-desktop.jpg 1x, img/video_shot-desktop@2x.jpg 2x" width="800" height="500">
               <source media=" (min-width: 768px) " srcset="img/video_shot-tablet.jpg 1x, img/video_shot-tablet@2x.jpg 2x" width="648" height="500">
               <img class="video__shot" src="img/video_shot.jpg" srcset="img/video_shot-mobile@2x.jpg 2x" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
@@ -185,7 +203,7 @@
             <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия, курс по вёрстке сайтов.">
               Разработано
               <svg class="html-academy__logo" aria-hidden="true" focusable="false" width="27" height="35">
-                <use href="img/sprite.svg#html-logo"></use>
+                <use href="img/sprite.svg#logo-htmlacademy"></use>
               </svg>
             </a>
           </div>

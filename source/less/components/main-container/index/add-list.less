@@ -3,6 +3,15 @@
   padding: 23px 18px 44.5px;
   background-color: #ffffff;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-height: 331px;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .add-list__item {
@@ -19,20 +28,99 @@
   }
 
   &--accomodation {
-    background-image: url("../../../../img/advantage-accomodation-mobile.svg");
+    background-image: url("../img/advantage-accomodation-mobile.svg");
     background-repeat: no-repeat;
     background-position: left top;
   }
 
   &--food {
-    background-image: url("../../../../img/advantage-food-mobile.svg");
+    background-image: url("../img/advantage-food-mobile.svg");
     background-repeat: no-repeat;
     background-position: left top;
   }
 
   &--souvenirs {
-    background-image: url("../../../../img/advantage-souvenirs-mobile.svg");
+    background-image: url("../img/advantage-souvenirs-mobile.svg");
     background-repeat: no-repeat;
     background-position: left top;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 123px;
+    padding-left: 0;
+    padding-bottom: 2px;
+
+    &--accomodation {
+      background-image: url("../img/advantage-accomodation-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 96px 24px;
+    }
+
+    &--food {
+      background-image: url("../img/advantage-food-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 39px 24px;
+      padding-top: 118px;
+    }
+
+    &--souvenirs {
+      background-image: url("../img/advantage-souvenirs-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 139px 20px;
+      padding-top: 110px;
+    }
+  }
 }
+
+.add-list__title {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+
+    &--accomodation {
+      padding-right: 40px;
+    }
+
+    &--food {
+      padding-left: 4px;
+      padding-right: 10px;
+    }
+
+    &--souvenirs {
+      padding-right: 2px;
+      padding-left: 50px;
+    }
+  }
+}
+
+.add-list__description--food br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.add-list__description {
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 80px;
+
+    &--accomodation {
+    }
+
+    &--food {
+      padding-left: 0;
+      padding-right: 8px;
+    }
+
+    &--souvenirs {
+      padding-left: 85px;
+      padding-right: 40px;
+    }
+  }
+}
+

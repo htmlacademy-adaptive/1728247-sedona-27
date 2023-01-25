@@ -1,5 +1,18 @@
 .page-footer {
   padding: 28px 82px 23px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 60px 23px;
+
+    &--socials {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .page-footer__title {
@@ -8,4 +21,8 @@
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 13px;
+  }
 }

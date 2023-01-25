@@ -34,11 +34,11 @@
                   <img class="logo__img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--pixelperfect">
                 <a class="main-nav__link" href="form.html">Форма отзыва</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+                <a class="main-nav__link main-nav__link--pixelperfect" href="https://htmlacademy.ru">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -51,14 +51,14 @@
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону.</h1>
           <picture>
             <source media=" (min-width: 1200px) " srcset="img/welcome-to-sedona-desktop.svg">
-            <source media=" (min-width: 768px) " srcset="img/welcome-to-sedona-tablet.svg">
+            <source media=" (min-width: 768px) " srcset="img/welcome-to-sedona-tablet.svg" width="461" height="350">
             <img class="main-banner__text" src="img/welcome-to-sedona.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!">
           </picture>
         </section>
 
         <section class="main-adv">
           <div class="main-adv__wrapper">
-            <h2 class="main-adv__title">Седона — небольшой<br>городок в Аризоне, заслуживающий большего!</h2>
+            <h2 class="main-adv__title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p class="main-adv__description main-adv__description--pixelperfect">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
           <ol class="main-adv__list">
@@ -66,26 +66,30 @@
               <div class="main-adv__container main-adv__container--divider">
                 <h3 class="main-adv__title">Настоящий городок</h3>
                 <p class="main-adv__number">— №1 —</p>
-                <p class="main-adv__description">Седона не аттракцион для туристов,<br>там течёт своя жизнь</p>
+                <p class="main-adv__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="main-adv__photo-wrapper">
                 <picture>
-                  <img src="img/photo_mobile-real-city.jpg" width="320" height="260" alt="Город Седона." class="main-adv__photo">
+                  <source media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.webp 1x, img/photo_desktop-real-city@2x.webp 2x">
+                  <source media=" (min-width: 768px) " srcset="img/photo_tablet-real-city.webp 1x, img/photo_tablet-real-city@2x.webp 2x">
+                  <source media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.jpg 1x, img/photo_desktop-real-city@2x.jpg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/photo_tablet-real-city.jpg 1x, img/photo_tablet-real-city@2x.jpg 2x">
+                  <img class="main-adv__photo-img" src="img/photo_mobile-real-city.jpg" srcset="img/photo_mobile-real-city@2x.jpg 2x" width="320" height="260" alt="Город Седона.">
                 </picture>
               </div>
 
               <ul class="main-adv__add-list add-list" >
                 <li class="add-list__item add-list__item--accomodation">
-                  <h4 class="main-adv__title">Жилье</h4>
-                  <p class="main-adv__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <h4 class="main-adv__title add-list__title add-list__title--accomodation">Жилье</h4>
+                  <p class="main-adv__description add-list__description add-list__description--accomodation">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="add-list__item add-list__item--food">
-                  <h4 class="main-adv__title">Еда</h4>
-                  <p class="main-adv__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <h4 class="main-adv__title add-list__title add-list__title--food">Еда</h4>
+                  <p class="main-adv__description add-list__description add-list__description--food">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
                 <li class="add-list__item add-list__item--souvenirs">
-                  <h4 class="main-adv__title">Сувениры</h4>
-                  <p class="main-adv__description">Не только китайского, но и местного производства!</p>
+                  <h4 class="main-adv__title add-list__title add-list__title--souvenirs">Сувениры</h4>
+                  <p class="main-adv__description add-list__description add-list__description--souvenirs">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </li>
@@ -98,32 +102,36 @@
               </div>
               <div class="main-adv__photo-wrapper">
                 <picture>
-                  <img src="img/photo_mobile-devil-bridge.jpg" width="320" height="260" alt="Мост Дьявола." class="main-adv__photo">
+                  <source media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.webp 1x, img/photo_desktop-devil-bridge-index@2x.webp 2x">
+                  <source media=" (min-width: 768px) " srcset="img/photo_tablet-devil-bridge-index.webp 1x, img/photo_tablet-devil-bridge-index@2x.webp 2x">
+                  <source media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.jpg 1x, img/photo_desktop-devil-bridge-index@2x.jpg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/photo_tablet-devil-bridge-index.jpg 1x, img/photo_tablet-devil-bridge-index@2x.jpg 2x">
+                  <img class="main-adv__photo-img" src="img/photo_mobile-devil-bridge-index.jpg" srcset="img/photo_mobile-devil-bridge-index@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола.">
                 </picture>
               </div>
             </li>
 
             <li class="main-adv__item main-adv__item--usual">
-              <h3 class="main-adv__title">Небольшая площадь</h3>
-              <p class="main-adv__number main-adv__number--pixelperfect">— №3 —</p>
-              <p class="main-adv__description">Все интересные места находятся<br>очень близко</p>
+              <h3 class="main-adv__title main-adv__title--area">Небольшая площадь</h3>
+              <p class="main-adv__number main-adv__number--pixelperfect main-adv__number--pixelperfect-tab">— №3 —</p>
+              <p class="main-adv__description main-adv__description--area">Все интересные места находятся очень близко</p>
             </li>
             <li class="main-adv__item main-adv__item--usual">
-              <h3 class="main-adv__title main-adv__title--pixelperfect">Красивая дорога</h3>
-              <p class="main-adv__number">— №4 —</p>
-              <p class="main-adv__description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+              <h3 class="main-adv__title main-adv__title--pixelperfect main-adv__title--road">Красивая дорога</h3>
+              <p class="main-adv__number main-adv__number--pixelperfect-tab">— №4 —</p>
+              <p class="main-adv__description main-adv__description--br main-adv__description--road">Ехать в Седону из Лас-Вегаса совсем<br>&nbsp;не скучно!</p>
             </li>
             <li class="main-adv__item main-adv__item--usual">
-              <h3 class="main-adv__title">Мало туристов</h3>
-              <p class="main-adv__number">— №5 —</p>
-              <p class="main-adv__description">Большинство едет в Гранд Каньон<br>и толпится там</p>
+              <h3 class="main-adv__title main-adv__title--tourists">Мало туристов</h3>
+              <p class="main-adv__number main-adv__number--pixelperfect-tab">— №5 —</p>
+              <p class="main-adv__description main-adv__description--tourists">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ol>
         </section>
 
         <section class="hotel-search">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
-          <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="hotel-search__button" href="#" aria-label="Поиск гостиницы в Седоне.">Найти гостиницу</a>
         </section>
 
@@ -161,7 +169,7 @@
             <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия, курс по вёрстке сайтов.">
               Разработано
               <svg class="html-academy__logo" aria-hidden="true" focusable="false" width="27" height="35">
-                <use href="img/sprite.svg#html-logo"></use>
+                <use href="img/sprite.svg#logo-htmlacademy"></use>
               </svg>
             </a>
           </div>
