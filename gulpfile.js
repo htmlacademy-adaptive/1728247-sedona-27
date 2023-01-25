@@ -63,7 +63,7 @@ const createWebp = () => {
 
 // SVG
 const svg = () => {
-  return gulp.src('source/img/*.svg')
+  return gulp.src('source/img/*.svg', 'source/img/icons/*.svg')
   .pipe(svgo())
   .pipe(gulp.dest('build/img'))
 }
@@ -100,7 +100,7 @@ export const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -147,6 +147,7 @@ export default gulp.series(
   html,
   scripts,
   svg,
+  sprite,
   createWebp
   ),
   gulp.series(
