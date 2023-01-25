@@ -12,3 +12,6 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+let map = document.querySelector(".sedona-map");
+map.classList.remove("sedona-map--nojs");
