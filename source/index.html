@@ -24,7 +24,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__menu">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+                <a class="main-nav__link main-nav__link--current main-nav__link--main" href="#">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -50,7 +50,7 @@
         <section class="main-banner">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону.</h1>
           <picture>
-            <source media=" (min-width: 1200px) " srcset="img/welcome-to-sedona-desktop.svg">
+            <source media=" (min-width: 1200px) " srcset="img/welcome-to-sedona-desktop.svg" width="460" height="350">
             <source media=" (min-width: 768px) " srcset="img/welcome-to-sedona-tablet.svg" width="461" height="350">
             <img class="main-banner__text" src="img/welcome-to-sedona.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!">
           </picture>
@@ -64,14 +64,15 @@
           <ol class="main-adv__list">
             <li class="main-adv__item main-adv__item--bright">
               <div class="main-adv__container main-adv__container--divider">
-                <h3 class="main-adv__title">Настоящий городок</h3>
+                <h3 class="main-adv__title main-adv__title--real-city">Настоящий городок</h3>
                 <p class="main-adv__number">— №1 —</p>
                 <p class="main-adv__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="main-adv__photo-wrapper">
                 <picture>
-                  <source media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.webp 1x, img/photo_desktop-real-city@2x.webp 2x">
-                  <source media=" (min-width: 768px) " srcset="img/photo_tablet-real-city.webp 1x, img/photo_tablet-real-city@2x.webp 2x">
+                  <source type="image/webp" media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.webp 1x, img/photo_desktop-real-city@2x.webp 2x">
+                  <source type="image/webp" media=" (min-width: 768px) " srcset="img/photo_tablet-real-city.webp 1x, img/photo_tablet-real-city@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo_mobile-real-city.webp 1x, img/photo_mobile-real-city@2x.webp 2x">
                   <source media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.jpg 1x, img/photo_desktop-real-city@2x.jpg 2x">
                   <source media=" (min-width: 768px) " srcset="img/photo_tablet-real-city.jpg 1x, img/photo_tablet-real-city@2x.jpg 2x">
                   <img class="main-adv__photo-img" src="img/photo_mobile-real-city.jpg" srcset="img/photo_mobile-real-city@2x.jpg 2x" width="320" height="260" alt="Город Седона.">
@@ -95,15 +96,16 @@
             </li>
 
             <li class="main-adv__item main-adv__item--bright">
-              <div class="main-adv__container">
-                <h3 class="main-adv__title main-adv__title--pixelperfect">Там есть мост Дьявола</h3>
+              <div class="main-adv__container main-adv__container--order">
+                <h3 class="main-adv__title main-adv__title--pixelperfect main-adv__title--devils">Там есть мост Дьявола</h3>
                 <p class="main-adv__number">— №2 —</p>
-                <p class="main-adv__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="main-adv__description main-adv__description--devils">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="main-adv__photo-wrapper">
                 <picture>
-                  <source media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.webp 1x, img/photo_desktop-devil-bridge-index@2x.webp 2x">
-                  <source media=" (min-width: 768px) " srcset="img/photo_tablet-devil-bridge-index.webp 1x, img/photo_tablet-devil-bridge-index@2x.webp 2x">
+                  <source type="image/webp" media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.webp 1x, img/photo_desktop-devil-bridge-index@2x.webp 2x">
+                  <source type="image/webp" media=" (min-width: 768px) " srcset="img/photo_tablet-devil-bridge-index.webp 1x, img/photo_tablet-devil-bridge-index@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo_mobile-devil-bridge-index.webp 1x, img/photo_mobile-devil-bridge-index@2x.webp 2x">
                   <source media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.jpg 1x, img/photo_desktop-devil-bridge-index@2x.jpg 2x">
                   <source media=" (min-width: 768px) " srcset="img/photo_tablet-devil-bridge-index.jpg 1x, img/photo_tablet-devil-bridge-index@2x.jpg 2x">
                   <img class="main-adv__photo-img" src="img/photo_mobile-devil-bridge-index.jpg" srcset="img/photo_mobile-devil-bridge-index@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола.">
@@ -168,7 +170,7 @@
           <div class="socials__html html-academy">
             <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия, курс по вёрстке сайтов.">
               Разработано
-              <svg class="html-academy__logo" aria-hidden="true" focusable="false" width="27" height="35">
+              <svg class="html-academy__logo" aria-hidden="true" focusable="false" width="27" height="35" viewbox="0 0 27 35">
                 <use href="img/sprite.svg#logo-htmlacademy"></use>
               </svg>
             </a>
