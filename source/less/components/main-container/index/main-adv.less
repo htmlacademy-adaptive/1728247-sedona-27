@@ -30,6 +30,12 @@
   }
 }
 
+.main-adv__title--real-city {
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-adv__title--area {
     padding-top: 12.5px;
@@ -46,6 +52,12 @@
     padding-top: 12.5px;
     padding-left: 50px;
     padding-right: 36px;
+  }
+
+  .main-adv__title--devils {
+    padding-top: 8.5px;
+    padding-left: 33.5px;
+    padding-right: 35px;
   }
 }
 
@@ -71,6 +83,11 @@
   .main-adv__description--tourists {
     padding-left: 15px;
   }
+
+  .main-adv__description--devils {
+    padding-left: 15px;
+    padding-right: 16px;
+  }
 }
 
 .main-adv__description--br br {
@@ -90,8 +107,17 @@
   @media (min-width: @tablet-width) {
     width: 33.3%;
     min-height: 256px;
-    padding-top: 20px;
+    padding-top: 45px;
     margin: 0;
+    padding-left: 27px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+.main-adv__container--order {
+  @media (min-width: @tablet-width) {
+    order: 2;
   }
 }
 
@@ -174,7 +200,6 @@
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    display: block;
     margin: 0;
     padding: 0;
   }
@@ -187,6 +212,7 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     object-fit: cover;
+    height: 256px;
   }
 }
 
