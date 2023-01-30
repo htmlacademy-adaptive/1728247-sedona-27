@@ -3,6 +3,12 @@
   padding-right: 18px;
   padding-left: 18px;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    min-height: 347px;
+    margin: 0 auto;
+  }
 }
 
 .card__photo-wrapper {
@@ -82,4 +88,29 @@
 
 .card__likes {
   .font-family-bold;
+}
+
+.card--main {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    min-height: 480px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    min-height: 480px;
+  }
+}
+
+.card__photo--main {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 400px;
+  }
 }
