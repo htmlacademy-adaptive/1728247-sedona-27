@@ -9,13 +9,26 @@
   grid-template-columns: auto;
   grid-template-rows: 79px 79px 79px;
   margin-bottom: 39px;
-  padding-left: 1px;
+  padding-left: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+    margin-right: 26px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
+    margin-right: 26px;
+    margin-left: 60px;
+  }
 }
 
 .form-fields__title {
   .block;
   text-align: left;
   padding-left: 17px;
+  color: #333333;
 }
 
 .form-fields__user-contacts {
@@ -24,7 +37,17 @@
   grid-template-columns: auto;
   grid-template-rows: 79px 79px;
   margin-bottom: 34px;
-  padding-left: 1px;
+  padding-left: 33px;
+  padding-right: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 51px;
+    padding-right: 76px;
+  }
 }
 
 .form-fields__opinions-list {
@@ -34,6 +57,22 @@
   grid-template-columns: auto;
   grid-template-rows: 46px 46px 46px;
   margin-bottom: 13px;
+  padding-left: 32px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 19px;
+    padding-left: 13px;
+    padding-right: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 35px;
+    padding-left: 90px;
+    margin-bottom: 37px;
+  }
 }
 
 .form-fields__places-list {
@@ -43,4 +82,22 @@
   grid-template-columns: auto;
   grid-template-rows: 46px 46px 46px 46px;
   margin-bottom: 13px;
+  padding-left: 33px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 19px;
+    padding-left: 124px;
+    padding-right: 112px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 19px;
+    padding-left: 144px;
+    margin-bottom: 50px;
+    padding-right: 80px;
+  }
 }

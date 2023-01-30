@@ -1,5 +1,18 @@
 .checkbox {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 224px;
+    min-height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 11px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }
 
 .checkbox__label {
@@ -11,6 +24,7 @@
   text-align: left;
   padding-left: 64px;
   cursor: pointer;
+  color: #000000;
 
   &:hover {
     color: #d2d2d2;
@@ -52,7 +66,7 @@
 }
 
 .checkbox__input:checked {
-  background-image: url("../../../../img/icon-check.svg");
+  background-image: url("../img/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center center;
 

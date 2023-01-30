@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
@@ -24,21 +24,21 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__menu">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
+                <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="#">Фото и видео</a>
+                <a class="main-nav__link main-nav__link--current main-nav__link--catalog" href="#">Фото и видео</a>
               </li>
               <li class="main-nav__item main-nav__item--logo logo">
-                <a class="logo__link" href="#" aria-label="Логотип Седоны - ссылка на главную страницу.">
+                <a class="logo__link" href="index.html" aria-label="Логотип Седоны - ссылка на главную страницу.">
                   <img class="logo__img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
                 </a>
               </li>
               <li class="main-nav__item main-nav__item--pixelperfect">
-                <a class="main-nav__link" href="form.html">Форма отзыва</a>
+                <a class="main-nav__link main-nav__link--form" href="form.html">Форма отзыва</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--pixelperfect" href="https://htmlacademy.ru">HTML Academy</a>
+                <a class="main-nav__link main-nav__link--html" href="https://htmlacademy.ru">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -64,14 +64,14 @@
           <ul class="catalog__list">
             <li class="catalog__item card card--main">
               <div class="card__photo-wrapper">
-                <a class="card__photo-link" href="#">
+                <a class="card__photo-link card__photo-link--main" href="#">
                   <picture>
                     <source type="image/webp" media=" (min-width: 1200px) " srcset="img/photo_desktop-sky-vasts.webp 1x, img/photo_desktop-sky-vasts@2x.webp 2x">
                     <source type="image/webp" media=" (min-width: 768px) " srcset="img/photo_tablet-sky-vasts.webp 1x, img/photo_tablet-sky-vasts@2x.webp 2x">
                     <source type="image/webp" srcset="img/photo_mobile-sky-vasts.webp 1x, img/photo_mobile-sky-vasts@2x.webp 2x">
                     <source media=" (min-width: 1200px) " srcset="img/photo_desktop-sky-vasts.jpg 1x, img/photo_desktop-sky-vasts@2x.jpg 2x">
                     <source media=" (min-width: 768px) " srcset="img/photo_tablet-sky-vasts.jpg 1x, img/photo_tablet-sky-vasts@2x.jpg 2x">
-                    <img class="card__photo" src="img/photo_mobile-sky-vasts.jpg" srcset="img/photo_mobile-sky-vasts@2x.jpg 2x" width="280" height="280" alt="Живописный вид на горы и дорогу на закате.">
+                    <img class="card__photo card__photo--main" src="img/photo_mobile-sky-vasts.jpg" srcset="img/photo_mobile-sky-vasts@2x.jpg 2x" width="280" height="280" alt="Живописный вид на горы и дорогу на закате.">
                   </picture>
                 </a>
               </div>
@@ -167,18 +167,18 @@
         <section class="video">
           <div class="video__text-wrapper">
             <h2 class="video__title">Все еще сомневаетесь?</h2>
-            <p class="video__description">Смотрите видеопрезентацию&nbspи скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <p class="video__description">Смотрите видеопрезентацию&nbsp;и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__shot-wrapper">
             <picture>
               <source type="image/webp" media=" (min-width: 1200px) " srcset="img/video_shot-desktop.webp 1x, img/video_shot-desktop@2x.webp 2x">
               <source type="image/webp" media=" (min-width: 768px) " srcset="img/video_shot-tablet.webp 1x, img/video_shot-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/video_shot-mobile.webp 1x, img/video_shot-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/video_shot.webp 1x, img/video_shot-mobile@2x.webp 2x">
               <source media=" (min-width: 1200px) " srcset="img/video_shot-desktop.jpg 1x, img/video_shot-desktop@2x.jpg 2x" width="800" height="500">
               <source media=" (min-width: 768px) " srcset="img/video_shot-tablet.jpg 1x, img/video_shot-tablet@2x.jpg 2x" width="648" height="500">
               <img class="video__shot" src="img/video_shot.jpg" srcset="img/video_shot-mobile@2x.jpg 2x" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
             </picture>
-            <button class="video__button" type="button"></button>
+            <button class="video__button" type="button" aria-label="Начать просмотр видеопрезентации."></button>
           </div>
         </section>
       </main>

@@ -3,6 +3,18 @@
   .border-page;
 }
 
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: start;
+}
+
 .catalog__item {
   .border-page;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
