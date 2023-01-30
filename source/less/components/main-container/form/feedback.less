@@ -1,5 +1,34 @@
 .feedback__header {
   padding-top: 37px;
   padding-bottom: 27px;
+  padding-left: 35px;
+  padding-right: 35px;
   .border-page;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 62px;
+    padding-left: 162px;
+    padding-right: 145px;
+    border: none;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 112px;
+    padding-left: 378px;
+    padding-right: 379px;
+    margin-bottom: 15px;
+  }
+}
+
+.feedback__title {
+  @media (min-width: @tablet-width) {
+    padding-top: 2px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 2px;
+    margin-bottom: 33px;
+  }
 }

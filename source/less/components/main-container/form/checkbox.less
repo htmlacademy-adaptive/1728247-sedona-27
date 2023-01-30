@@ -1,5 +1,18 @@
 .checkbox {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 224px;
+    min-height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 11px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }
 
 .checkbox__label {
